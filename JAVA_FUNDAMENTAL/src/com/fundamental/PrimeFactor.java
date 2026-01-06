@@ -1,6 +1,5 @@
 package com.fundamental;
 
-
 //Prime factor is the factor of the given number which is a prime number. Factors are the numbers
 //you multiply together to get another number. In simple words, prime factor is finding which prime
 //numbers multiply together to make the original number.
@@ -12,18 +11,17 @@ package com.fundamental;
 //So print n if it is greater than 2.
 
 public class PrimeFactor {
-	
+
 	public static void primeFactors(int n) {
-		
+
 		// Print the number of 2s that divide n
-		while(n%2==0) {
-			System.out.println(2+" ");
-			n/=2;
+		while (n % 2 == 0) {
+			System.out.println(2 + " ");
+			n /= 2;
 		}
-		
 		// n must be odd at this point. So we can
 		// skip one element (Note i = i +2)
-		
+
 		for (int i = 3; i <= Math.sqrt(n); i += 2) {
 			// While i divides n, print i and divide n
 			while (n % i == 0) {
@@ -35,7 +33,7 @@ public class PrimeFactor {
 		// n is a prime number greater than 2
 		if (n > 2)
 			System.out.print(n);
-			}
+	}
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
@@ -44,3 +42,7 @@ public class PrimeFactor {
 	}
 
 }
+
+//Time Complexity: O(sqrt(n))
+//
+//Auxiliary Space: O(1)
