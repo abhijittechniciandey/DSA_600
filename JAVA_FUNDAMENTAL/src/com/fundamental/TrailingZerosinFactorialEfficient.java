@@ -24,7 +24,8 @@ public class TrailingZerosinFactorialEfficient {
 		return count;
 		
 	}
-	
+
+// Time complexity: O(log5n)  Space Complexity: O(1)
 	
 
 	public static void main(String[] args) {
