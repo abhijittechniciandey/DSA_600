@@ -43,3 +43,7 @@ public class PrimeNumber {
 	}
 
 }
+
+
+//Time Complexity: O(sqrt(n))
+//Auxiliary space: O(1)
